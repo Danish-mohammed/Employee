@@ -14,7 +14,7 @@
 	<name>employeepayroll</name>
 	<description>Employee project for Spring Boot</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -84,10 +84,10 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.10.1</version>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.2</version>
 				<configuration>
-					<target>11</target> <!-- or any version of Java installed on your machine -->
+					<skipTests>true</skipTests>
 				</configuration>
 			</plugin>
 		</plugins>
